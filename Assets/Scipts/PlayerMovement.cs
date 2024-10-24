@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float climbSpeed = 3f;
 
     private Rigidbody2D rb;
+    private Animator animator;
 
     [SerializeField] private GameObject feet;
 
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -39,6 +41,17 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
+        
+        //if walking animation walk
+        if(Input.GetAxisRaw("Horizontal") != 0 && isGrounded)
+        {
+            animator.SetBool("isWalking", true);
+        }
+        
+        else
+        {
+            animator.SetBool("isWalking", false);
         }
 
         if (isClimbing)
