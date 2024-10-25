@@ -44,6 +44,15 @@ TagManager:
   - name: bg
     uniqueID: 1368314307
     locked: 0
+  - name: BG3
+    uniqueID: 3530387063
+    locked: 0
+  - name: BG2
+    uniqueID: 2742287775
+    locked: 0
+  - name: BG1
+    uniqueID: 2433770795
+    locked: 0
   - name: platforms
     uniqueID: 1697917871
     locked: 0
