@@ -41,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            animator.SetBool("isJumping", true);
         }
         
         //if walking animation walk
@@ -58,5 +59,11 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(moveDirection.x * climbSpeed, ifCanClimb == true ? moveDirection.y * climbSpeed : Mathf.Clamp(moveDirection.y * climbSpeed, -climbSpeed, 0.2f));
         }
+    }
+
+    //this is an animation event
+    public void SetJumpToFalse()
+    {
+        animator.SetBool("isJumping", false);
     }
 }
