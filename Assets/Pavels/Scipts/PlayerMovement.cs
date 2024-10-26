@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer render;
 
     [SerializeField] private GameObject feet;
-    
+    [SerializeField] private GameObject firstSpawnPoint;
 
     [SerializeField] private bool ifCanClimb;
 
@@ -27,13 +27,15 @@ public class PlayerMovement : MonoBehaviour
     [Header("Only look")]
     [SerializeField] private GameObject lastTouchedObject;
     [SerializeField] private GameObject touchingObject;
+    [SerializeField] private GameObject lastRespawnPoint;
 
-    [SerializeField] private bool isGrounded;
-    [SerializeField] private bool isClimbing;
+    public bool isGrounded;
+    public bool isClimbing;
     [SerializeField] private bool jumpedOfIce;
 
     void Start()
     {
+        lastRespawnPoint = firstSpawnPoint;
         rb = GetComponent<Rigidbody2D>();
         render = rb.GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -99,6 +101,11 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetBool("isJumping", true);
             }
         }
+    }
+
+    public void MoveToLastSaving()
+    {
+        transform.position = lastRespawnPoint.transform.position;
     }
 
 
