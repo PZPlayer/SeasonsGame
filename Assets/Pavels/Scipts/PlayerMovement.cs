@@ -43,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("isclimbing" + isClimbing);
         isGrounded = Physics2D.OverlapCircle(feet.transform.position, 0.2f, groundLayer);
         isClimbing = Physics2D.OverlapCircle(transform.position, 0.2f, wallLayer);
 
@@ -78,6 +79,34 @@ public class PlayerMovement : MonoBehaviour
         {
             render.flipX = true;
         }
+
+        if(isClimbing)
+        {
+            if(_moveDirection.y == 0)
+            {
+                animator.SetBool("ClimbIdle", true);
+                animator.SetBool("isClimbing", false);
+                animator.SetBool("isSliding", false);
+            }
+            if(_moveDirection.y > 0)
+            {
+                //animator.SetBool("ClimbIdle", false);
+                animator.SetBool("isClimbing", true);
+            }
+            if(_moveDirection.y < 0)
+            {
+                //animator.SetBool("ClimbIdle", false);
+                animator.SetBool("isSliding", true);
+            }
+        }
+        else if(!isClimbing)
+        {
+            animator.SetBool("ClimbIdle", false);
+            animator.SetBool("isClimbing", false);
+            animator.SetBool("isSliding", false);
+        }
+
+
 
         //if walking animation walk
         animator.SetBool("isWalking", Input.GetAxisRaw("Horizontal") != 0 && isGrounded ? true : false);
