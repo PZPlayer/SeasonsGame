@@ -95,7 +95,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: canon shot_0
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 16
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a144c5d4b3392945a7a8512b769d913
+      internalID: 129216854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canon shot_1
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 17
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bfb89cd79a182e4893302594f830efb
+      internalID: -179188794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canon shot_2
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 16
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f05d0012a4aa54085d8a12cea27fe4
+      internalID: 867345907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canon shot_3
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 16
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d332e68c05d00045a2840bf09835f82
+      internalID: -1074826183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canon shot_4
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 45
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4476fa9f12155547b1a6c45ce5dd33b
+      internalID: -1083644199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canon shot_5
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 51
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11a145308eb1ab469b865c2caf7a99a
+      internalID: 694500909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canon shot_6
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 16
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e9186d628012948b6e2532a4881eb2
+      internalID: 1193729900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canon shot_7
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 16
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1dd87db0beb314cad648372b923302
+      internalID: 918151582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canon shot_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 52
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb122d470cbd03147859e6153b861254
+      internalID: -17460317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canon shot_9
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 16
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752d896ac74bf83419bc01a8d6d40393
+      internalID: -1561936865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canon shot_10
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 16
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac158172b3a2aeb46a73cabe9e6f75c1
+      internalID: -403439026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canon shot_11
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 16
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b4935cb96e0cf488b6a139e942b84b
+      internalID: 1046658176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canon shot_12
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 16
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9764866e4c713f408ca9d66dde40d90
+      internalID: 1198715809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canon shot_13
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 16
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d751245aac25b47b91c83f5a16bace
+      internalID: 2029659631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canon shot_14
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 16
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56fc4757b238ee4bb41b9e0103e3586
+      internalID: 1410947349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canon shot_15
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 16
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632f0ca85e399804595965487180e113
+      internalID: -1439646699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +442,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      canon shot_0: 129216854
+      canon shot_1: -179188794
+      canon shot_10: -403439026
+      canon shot_11: 1046658176
+      canon shot_12: 1198715809
+      canon shot_13: 2029659631
+      canon shot_14: 1410947349
+      canon shot_15: -1439646699
+      canon shot_2: 867345907
+      canon shot_3: -1074826183
+      canon shot_4: -1083644199
+      canon shot_5: 694500909
+      canon shot_6: 1193729900
+      canon shot_7: 918151582
+      canon shot_8: -17460317
+      canon shot_9: -1561936865
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
