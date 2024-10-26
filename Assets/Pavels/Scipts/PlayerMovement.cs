@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     public LayerMask wallLayer;
 
+    AudioManager audioManager;
+
     [Space(10)]
     [Header("Only look")]
     [SerializeField] private GameObject lastTouchedObject;
@@ -31,7 +33,13 @@ public class PlayerMovement : MonoBehaviour
 
     public bool isGrounded;
     public bool isClimbing;
+    public bool needsLandSound = false;
     [SerializeField] private bool jumpedOfIce;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     void Start()
     {
@@ -43,7 +51,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("isclimbing" + isClimbing);
         isGrounded = Physics2D.OverlapCircle(feet.transform.position, 0.2f, groundLayer);
         isClimbing = Physics2D.OverlapCircle(transform.position, 0.2f, wallLayer);
 
@@ -128,8 +135,21 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 animator.SetBool("isJumping", true);
+                audioManager.PlaySFX(audioManager.jump);
+                StartCoroutine(PlayLandingSound());
             }
         }
+        if(needsLandSound && isGrounded)
+        {
+            audioManager.PlaySFX(audioManager.land);
+            needsLandSound = false;
+        }
+    }
+
+    IEnumerator PlayLandingSound ()
+    {                 
+        yield return new WaitForSeconds (0.05f);
+        needsLandSound = true;
     }
 
     public void MoveToLastSaving()
