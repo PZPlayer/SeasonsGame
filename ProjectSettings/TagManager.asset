@@ -62,3 +62,9 @@ TagManager:
   - name: player
     uniqueID: 3791402271
     locked: 0
+  - name: Menu
+    uniqueID: 3312274731
+    locked: 0
+  - name: Menu txt
+    uniqueID: 214954597
+    locked: 0
