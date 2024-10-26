@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1a8dc65b689395a4a9c9e677ea787bbb
+guid: ea29ca70e87286240bf8b2797961f7f4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cannon and ball_0
+      name: icea breaking_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 52
-        height: 45
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9666c78258736d84f9d3a98c109c9361
-      internalID: -1868097854
+      spriteID: 6c7d447ade5c5274eaae3cf0b83e5691
+      internalID: -368053090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cannon and ball_1
+      name: icea breaking_1
       rect:
         serializedVersion: 2
-        x: 52
+        x: 32
         y: 0
-        width: 52
-        height: 45
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80499c8e3bea6ea43bcfc5ac89a2f20f
-      internalID: -291197020
+      spriteID: d5a4d81565d9cc149a439fc9ef192810
+      internalID: -478436100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icea breaking_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365180fa6d07f794fb42f240e4b0f6dc
+      internalID: 1288497396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icea breaking_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ecde5fbb5f92cd42ad8b838e5bdc7e4
+      internalID: 1059144370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icea breaking_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae149901832773942a0953c6b8ed2da7
+      internalID: -420828805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icea breaking_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eaa983362bd03b42a5479a055e0f749
+      internalID: 1856140618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icea breaking_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3665aeef35f09743ba7f35296fa0b58
+      internalID: 972533309
       vertices: []
       indices: 
       edges: []
@@ -149,8 +254,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cannon and ball_0: -1868097854
-      cannon and ball_1: -291197020
+      icea breaking_0: -368053090
+      icea breaking_1: -478436100
+      icea breaking_2: 1288497396
+      icea breaking_3: 1059144370
+      icea breaking_4: -420828805
+      icea breaking_5: 1856140618
+      icea breaking_6: 972533309
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

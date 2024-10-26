@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1a8dc65b689395a4a9c9e677ea787bbb
+guid: f6a90c8896be1ae4bb8455d4d6fd55dd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,49 +95,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: cannon and ball_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 52
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9666c78258736d84f9d3a98c109c9361
-      internalID: -1868097854
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cannon and ball_1
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 0
-        width: 52
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80499c8e3bea6ea43bcfc5ac89a2f20f
-      internalID: -291197020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -148,9 +106,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      cannon and ball_0: -1868097854
-      cannon and ball_1: -291197020
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
