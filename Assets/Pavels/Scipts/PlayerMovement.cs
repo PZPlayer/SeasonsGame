@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Only look")]
     [SerializeField] private GameObject lastTouchedObject;
     [SerializeField] private GameObject touchingObject;
-    [SerializeField] private GameObject lastRespawnPoint;
+    public GameObject lastRespawnPoint;
 
     public bool isGrounded;
     public bool isClimbing;
