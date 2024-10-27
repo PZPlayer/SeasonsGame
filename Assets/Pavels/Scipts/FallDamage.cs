@@ -28,7 +28,7 @@ public class FallDamage : MonoBehaviour
             {
                 if(fallilngTime >= maxFallingTime)
                 {
-                    health.Die();
+                    //health.Die();
                 }
                 else
                 {
