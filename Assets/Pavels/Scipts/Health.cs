@@ -12,6 +12,8 @@ public class Health : MonoBehaviour
     public float MaxHealth;
     public float CurHealth;
 
+    AudioManager audioManager;
+
     [Header("Events")]
     [Description("You can add here functions, that will be called once health changes")]
     public UnityEvent loseHealth;
@@ -22,6 +24,7 @@ public class Health : MonoBehaviour
     private void Awake()
     {
         anmtr = GetComponent<Animator>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Update()
@@ -29,6 +32,7 @@ public class Health : MonoBehaviour
         if(CurHealth <= 0)
         {
             Die();
+            CurHealth = 1;
         }
     }
 
@@ -46,6 +50,7 @@ public class Health : MonoBehaviour
 
     public void Die()
     {
+        audioManager.PlaySFX(audioManager.die);
         anmtr.SetTrigger("Death");
         Death.Invoke();
     }

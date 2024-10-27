@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer render;
 
     [SerializeField] private GameObject feet;
+    [SerializeField] private GameObject bodyCenter;
     [SerializeField] private GameObject firstSpawnPoint;
 
     [SerializeField] private bool ifCanClimb;
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
     public LayerMask groundLayer;
     public LayerMask wallLayer;
+    public LayerMask hardWallLayer;
 
     AudioManager audioManager;
 
@@ -53,7 +55,20 @@ public class PlayerMovement : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCircle(feet.transform.position, 0.2f, groundLayer);
         isClimbing = Physics2D.OverlapCircle(transform.position, 0.2f, wallLayer);
-
+        _moveDirection.x = Input.GetAxisRaw("Horizontal");
+        _moveDirection.y = Input.GetAxisRaw("Vertical");
+        RaycastHit2D hit = Physics2D.Raycast( bodyCenter.transform.position, new Vector2(_moveDirection.x, 0), 0.5f, hardWallLayer);
+        RaycastHit2D hit2 = Physics2D.Raycast(transform.position, new Vector2(_moveDirection.x, 0), 0.5f, hardWallLayer);
+        RaycastHit2D hit3 = Physics2D.Raycast(feet.transform.position, new Vector2(_moveDirection.x, 0), 0.5f, hardWallLayer);
+        if (hit.collider != null || hit2.collider != null || hit3.collider != null)
+        {
+            print("Too near!");
+            _moveDirection.x = 0;
+            print("" + _moveDirection);
+        }
+        Debug.DrawRay(bodyCenter.transform.position, new Vector2(_moveDirection.x, 0), Color.green, 0.5f);
+        Debug.DrawRay(transform.position, new Vector2(_moveDirection.x, 0), Color.green, 0.5f);
+        Debug.DrawRay(feet.transform.position, new Vector2(_moveDirection.x, 0), Color.green, 0.5f);
         if (isClimbing && touchingObject == null)
         {
             touchingObject = Physics2D.OverlapCircle(transform.position, 0.2f, wallLayer).gameObject;
@@ -74,9 +89,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        _moveDirection.x = Input.GetAxisRaw("Horizontal");
-        _moveDirection.y = Input.GetAxisRaw("Vertical");
-        if(!jumpedOfIce) rb.velocity = new Vector2(_moveDirection.x * moveSpeed, rb.velocity.y);
+        rb.velocity = new Vector2(_moveDirection.x * moveSpeed, rb.velocity.y);
 
         if (rb.velocity.x > 0)
         {
@@ -87,13 +100,16 @@ public class PlayerMovement : MonoBehaviour
             render.flipX = true;
         }
 
-        if(isClimbing)
+        if (rb.velocity.x != 0 && !isClimbing && isGrounded) audioManager.PlayLoopSFX(audioManager.walk);
+
+        if (isClimbing)
         {
             if(_moveDirection.y == 0)
             {
                 animator.SetBool("ClimbIdle", true);
                 animator.SetBool("isClimbing", false);
                 animator.SetBool("isSliding", false);
+                audioManager.PlayLoopSFX(audioManager.slide);
             }
             if(_moveDirection.y > 0)
             {
@@ -103,10 +119,11 @@ public class PlayerMovement : MonoBehaviour
             if(_moveDirection.y < 0)
             {
                 //animator.SetBool("ClimbIdle", false);
+                audioManager.PlayLoopSFX(audioManager.slideFast);
                 animator.SetBool("isSliding", true);
             }
         }
-        else if(!isClimbing)
+        if(!isClimbing)
         {
             animator.SetBool("ClimbIdle", false);
             animator.SetBool("isClimbing", false);
@@ -125,6 +142,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.AddForce(new Vector2(_moveDirection.x * jumpForce / 2, 1 * jumpForce), ForceMode2D.Impulse);
                 lastTouchedObject = touchingObject;
+                audioManager.PlaySFX(audioManager.jump);
                 jumpedOfIce = true;
                 animator.SetBool("isJumping", true);
             }
